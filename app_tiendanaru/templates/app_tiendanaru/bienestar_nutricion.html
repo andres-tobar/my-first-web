@@ -1,0 +1,141 @@
+{% extends "app_tiendanaru/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="pricing py-5">
+  <!-- IMAGENES COLUMNAS -->
+
+  <!-- Page Content -->
+<div class="container">
+
+
+
+
+<div class="row">
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/bienestar_nutricion/batido.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="{% url 'contacto' %}">Batido-SHAKE</a>
+        </h4>
+        <p class="card-text">Controla tu peso de forma saludable y agradable, con 3 sabores te puedes alimentar
+          de una forma ligera y con todos los nutrientes que tu cuerpo necesita, sin sentirse pesado despues de las comidas.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/bienestar_nutricion/gel.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="{% url 'contacto' %}">Gel Reductor-CORPS</a>
+        </h4>
+        <p class="card-text">Ayuda a eliminar la flacidez, quemar grasa localizada, reduce celulitis, mejora la vasodilatacion
+          periferica, activa el drenaje de las toxinas debido a la combinacion de alcanfor y mentol y tiene efecto crioterapia.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/bienestar_nutricion/lipo.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="{% url 'contacto' %}">Tonico Corporal CORPS </a>
+        </h4>
+        <p class="card-text">Con nuestro TÓNICO CORPORAL  te Proporciona firmeza y tónifica la piel. Reduce la flacidez.
+
+          Son productos de alta tecnología y rendimiento, específicos para hidratar, tonificar y masajear esas áreas con grasa a eliminar.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
+
+<!-- TERMINA COLUMNAS IMAGENES -->
+
+
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$92,000</h6>
+            <hr>
+            
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Plus Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$59,000</h6>
+            <hr>
+      
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Pro Tier -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$39,000</h6>
+            <hr>
+        
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{% static 'app_tiendanaru/img/bienestar_nutricion/masaje.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">Crema Para Masaje CORPS</a>
+        </h4>
+        <p class="card-text">Con BODY CONTOUR CREMA PARA MASAJES estimula la microcirculación, facilitando el drenaje de toxinas.
+
+          Son productos de alta tecnología y rendimiento, específicos para hidratar, tonificar y masajear esas áreas con grasa a eliminar. </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$39,000</h6>
+            <hr>
+            
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</section>
+
+
+  
+
+
+{% endblock%}

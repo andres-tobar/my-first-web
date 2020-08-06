@@ -1,0 +1,110 @@
+{% extends "app_tiendanaru/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section style="background: rgb(247, 189, 159, 0.9);">>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+
+  
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'app_blog/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'app_blog/css/blog-home.css' %}" rel="stylesheet">
+
+</head>
+
+<body >
+
+ 
+     
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+
+        <h1 class="my-4" style="color: blueviolet; font-family: releway;"> Tienda Naru
+          
+        </h1>
+
+        <!-- Blog Post -->
+
+        {% for i in post %}
+          <div class="card mb-4">
+            <img class="card-img-top" src="{{i.imagen}}" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">{{i.titulo}}</h2>
+              <p class="card-text">{{i.contenido | safe}}</p>
+              <a href="{% url 'blog' %}" class="btn btn-primary">devolverse a blog &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              {{i.fecha_creacion}}
+              <a href="#">Nathalia Tobar</a>
+            </div>
+          </div>
+        {% endfor %}
+
+        
+
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Contactanos</h5>
+          <div class="card-body">
+            <div class="row">
+              <img class="card-img-top" src="{% static 'app_blog/logo.png' %}" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Nuestras Redes</h5>
+          <div class="card-body">
+            <div  >
+              <ul>
+                
+                <li class="fila"><a href="whatsapp://send?text=Titulo - Enlace" data-action="share/whatsapp/share" ><img src="{% static 'app_tiendanaru/img/home/whatsapp.png' %}" alt="whatsapp"></a>  320 623 0693-310 826 5721</li>
+                <li class="fila"><a href="https://www.facebook.com/pages/category/Product-Service/Tienda-virtual-NAR%C3%9A-113923803411201/" target="_blank" ><img src="{% static 'app_tiendanaru/img/home/facebook.png' %}" alt="facebook"></a>  Tienda Virtual NARU</li>
+                <li class="fila"><a href="https://www.instagram.com/tiendanaru/" target="_blank" ><img src="{% static 'app_tiendanaru/img/home/instagram.png' %}" alt="instagram"></a>  @tiendanaru</li>
+                <li class="fila"><a href="{% url 'contacto' %}"  ><img src="{% static 'app_tiendanaru/img/home/gmail.png' %}" alt="gmail"></a>  tiendanarupas@gmail.com</li>
+              </ul>
+            </div>              
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'app_blog/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'app_blog/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>
+</section>
+
+{% endblock %}

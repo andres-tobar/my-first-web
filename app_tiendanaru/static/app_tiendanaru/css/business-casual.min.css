@@ -1,0 +1,343 @@
+/*!47,23,15,.65      247, 189, 159, 0.9  linear-gradient(rgb(47,23,15,.65),rgb(47,23,15,.65)), 
+ * Start Bootstrap - Business Casual v5.0.10 (https://startbootstrap.com/themes/business-casual)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-casual/blob/master/LICENSE)
+ */body{
+     font-family:Lora;
+     background-image: url(../img/bg.jpg);
+     background-attachment:fixed;
+     background-position:center;
+     background-size:cover
+    }
+    .titulo_fondo{
+        background: rgb(47,23,15,.30);
+        width: 62%;
+        
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family:Raleway
+    }
+    p{
+        line-height:1.75
+    }
+    .text-faded{
+        color:rgba(255,255,255,.3)
+    }
+    .site-heading{
+        margin-top:5rem;
+        margin-bottom:5rem;
+        text-transform:uppercase;
+        line-height:1;
+        font-family:Raleway
+    }
+    .site-heading .site-heading-upper{
+        display:block;
+        font-size:2rem;
+        font-weight:800
+    }
+    .site-heading .site-heading-lower{
+        font-size:5rem;
+        font-weight:100;
+        line-height:4rem
+    }
+    .page-section{
+        margin-top:5rem;
+        margin-bottom:5rem
+    }
+    .section-heading{
+        text-transform:uppercase
+    }
+    .section-heading .section-heading-upper{
+        display:block;
+        font-size:1rem;
+        font-weight:800
+    }
+    .section-heading .section-heading-lower{
+        display:block;
+        font-size:3rem;
+        font-weight:100
+    }
+    .bg-faded{
+        background-color:rgba(255,255,255,.85)
+    }
+    #mainNav{
+        background-color:rgba(167, 119, 235, 0.95);
+        font-family:Raleway
+    }
+    #mainNav .navbar-brand{
+        color:#e6a756
+    }
+    #mainNav .navbar-nav .nav-item .nav-link{
+        color:rgba(255,255,255,.7);
+        font-weight:800
+    }
+    #mainNav .navbar-nav .nav-item.active .nav-link{
+        color:#e6a756
+    }
+    @media (min-width:992px){
+        #mainNav .navbar-nav .nav-item .nav-link{
+            font-size:.9rem;
+        }
+        #mainNav .navbar-nav .nav-item .nav-link:hover{
+            color:rgba(255,255,255,.4)
+        }
+        #mainNav .navbar-nav .nav-item.active .nav-link:hover{
+            color:#e6a756
+        }
+    }
+    .btn-xl{
+        font-weight:700;
+        font-size:.8rem;
+        padding-top:1.5rem;
+        padding-bottom:1.5rem;
+        padding-left:2rem;
+        padding-right:2rem
+    }
+    .intro{
+        position:relative
+    }
+    @media (min-width:992px){
+        .intro .intro-img{
+            width:75%;float:right
+        }
+        .intro .intro-text{
+            left:0;
+            width:60%;
+            margin-top:3rem;
+            position:absolute
+        }
+        .intro .intro-text .intro-button{
+            width:100%;
+            left:0;
+            position:absolute;
+            bottom:-2rem
+        }
+    }
+    @media (min-width:1200px){
+        .intro .intro-text{
+            width:45%
+        }
+    }
+    .cta{
+        padding-top:5rem;
+        padding-bottom:5rem;
+        background-color:rgba(247, 189, 159, 0.9)
+    }
+    .cta .cta-inner{
+        position:relative;
+        padding:3rem;
+        margin:.5rem;
+        background-color:rgba(255,255,255,.85)
+    }
+    .cta .cta-inner:before{
+        border-radius:.5rem;
+        content:'';
+        position:absolute;
+        top:-.5rem;
+        bottom:-.5rem;
+        left:-.5rem;
+        right:-.5rem;
+        border:.25rem solid rgba(255,255,255,.85);
+        z-index:-1
+    }
+    @media (min-width:992px){
+        .about-heading .about-heading-img{
+            position:relative;
+            z-index:0
+        }
+        .about-heading .about-heading-content{
+            margin-top:-5rem;
+            position:relative;
+            z-index:1
+        }
+    }
+    @media (min-width:992px){
+        .product-item .product-item-title{
+            position:relative;
+            z-index:1;
+            margin-bottom:-3rem
+        }
+        .product-item .product-item-img{
+            position:relative;
+            z-index:0;
+            max-width:60vw
+        }
+        .product-item .product-item-description{
+            position:relative;
+            z-index:1;
+            margin-top:-3rem;
+            max-width:50vw
+        }
+    }
+    .list-hours{
+        font-size:.9rem
+    }
+    .list-hours .list-hours-item{
+        border-bottom:1px solid rgba(230,167,86,.5);
+        padding-bottom:.25rem;
+        margin-bottom:1rem;
+        font-style:italic
+    }
+    .list-hours .list-hours-item.today{
+        font-weight:700;
+        color:#e6a756
+    }
+    @media (min-width:992px){
+        .list-hours{
+            width:50%;
+            font-size:1.1rem
+        }
+    }
+    .address strong{
+        font-size:1.2rem
+    }
+    .footer{
+        background-color:rgba(167, 119, 235, 0.95)
+    }
+    .text-primary{
+        color: rgb(250, 250, 252) !important;
+        font-family:Releway;
+    }
+    .bg-primary{
+        background-color:#e6a756!important
+    }
+    .btn{
+        box-shadow:0 3px 3px 0 rgba(33,37,41,.1)
+    }
+    .btn-primary{
+        background-color:#e6a756;border-color:#e6a756
+    }
+    .btn-primary:active,.btn-primary:focus,.btn-primary:hover{
+        background-color:#df902a;
+        border-color:#df902a
+    }
+    .font-weight-light{
+        font-weight:100!important
+    }
+    /*------------------------ PRODUCTOS RECIENTES------*/
+    
+    section.pricing{
+        background: rgba(213, 228, 245, 0.90);
+        background: linear-gradient(to right, #baeaee, #43cff1);
+        margin: 9em;
+        border-radius: 1rem;
+    }
+      
+    .pricing .card {
+        border: none;
+        border-radius: 1rem;
+        transition: all 0.2s;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+        margin-bottom: 2em;
+    }
+      
+    .pricing hr {
+        margin: 1.5rem 0;
+    }
+      
+    .pricing .card-title {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+        letter-spacing: .1rem;
+        font-weight: bold;
+    }
+      
+    .pricing .card-price {
+        font-size: 3rem;
+        margin: 0;
+    }
+      
+    .pricing .card-price .period {
+        font-size: 0.8rem;
+    }
+      
+    .pricing ul li {
+        margin-bottom: 1rem;
+    }
+      
+    .pricing .text-muted {
+        opacity: 0.7;
+    }
+      
+    .pricing .btn {
+        font-size: 80%;
+        border-radius: 5rem;
+        letter-spacing: .1rem;
+        font-weight: bold;
+        padding: 1rem;
+        opacity: 0.7;
+        transition: all 0.2s;
+    }
+      
+      /* Hover Effects on Card */
+      
+    @media (min-width: 992px) {
+        .pricing .card:hover {
+          margin-top: -.25rem;
+          margin-bottom: .25rem;
+          box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+        }
+        .pricing .card:hover .btn {
+          opacity: 1;
+        }
+    }
+    .sin_vineta{
+        list-style-type: none;
+    }
+
+    /* REDES SOCIALES---------------*/
+
+
+
+    
+    .fila{
+        padding: 1%;
+        list-style-type: none;
+    }
+
+    .titulo_social{
+        font-family:Raleway;
+        font-size: 1.5rem;
+        font-weight:bold
+
+    }
+    
+    .social{
+                /*las imágenes usadas tienen width de 48px*/
+        width:48px;
+        position:relative;
+        top:20px;
+        left:0;
+        padding:10px 10px;
+        
+    }
+
+            /* Extra centrado vertical*/
+
+
+    .social .fila :hover {
+         /* Cambiamos el fondo cuando el usuario pase el mouse */
+        padding: 10px ; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+        
+    }
+    #content { 
+        overflow:auto; 
+        
+    } 
+      
+    #left, #right { 
+    width: 40%;
+    margin:5px; 
+    padding: 1em;
+     
+         
+    } 
+      
+    #left  { float:left;  }
+    #right { float:right; } 
+
+  
+
+
+    
+    

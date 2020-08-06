@@ -1,0 +1,136 @@
+{% extends "app_tiendanaru/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="pricing py-5">
+  <!-- IMAGENES COLUMNAS -->
+
+  <!-- Page Content -->
+<div class="container">
+
+<!-- Page Heading -->
+
+  
+
+
+<div class="row">
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/aseo_personal/dental.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="{% url 'contacto' %}"> Gel Dental PROWHITE</a>
+        </h4>
+        <p class="card-text">El Gel Dental Pro White de Hinode es el producto ideal para quien quiere contar con dientes mucho más blancos y sanos. Las micropartículas del Gel Dental Pro White actúan directamente en sus dientes, dejándolos más blancos y limpios. 
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/aseo_personal/enjuage.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="{% url 'contacto' %}">Enjuague Bucal PROWHITE</a>
+        </h4>
+        <p class="card-text"> El Antiséptico Bucal Pro White es el producto ideal para quien desea un aliento fresco y una boca libre de gérmenes y bacterias. Su exclusiva fórmula de micropartículas activas actúa directamente en la limpieza de su boca, proporcionándole mayor salud bucal y un aliento más fresco. 
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/aseo_personal/deso.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="{% url 'contacto' %}">Desodorante ERVADOCE </a>
+        </h4>
+        <p class="card-text"> Desodorante Roll-On, Erva Doce sin fragancia, el producto ideal para que tengas tus axilas secas, protegidas e hidratadas hasta por 24 horas. Gracias a su composición con Erva-Doce, el desodorante protege sus axilas de la transpiración sin maltratar o irritar su piel, con un aspecto suave.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- TERMINA COLUMNAS IMAGENES -->
+
+
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$13,000</h6>
+            <hr>
+          
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Plus Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$26,000</h6>
+            <hr>
+     
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Pro Tier -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$17,000</h6>
+            <hr>
+        
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- segunda fila-->
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{% static 'app_tiendanaru/img/aseo_personal/carbon.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#"> Gel Dental PROACTIVE </a>
+        </h4>
+        <p class="card-text">Gel dental de carbón activado + hinodo proactivo de aloe vera. El gel dental proactivo de la línea Pro tiene en su fórmula carbón activado y xilitol. Cada uno tiene beneficios específicos para el cuidado dental con una prueba de efectividad clínica comprobada.  </p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$27,000</h6>
+            <hr>
+            
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+</div>
+ 
+
+</section>
+{% endblock%}

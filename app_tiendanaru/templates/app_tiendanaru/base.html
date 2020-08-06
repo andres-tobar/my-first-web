@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Tienda Naru</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'app_tiendanaru/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'app_tiendanaru/css/business-casual.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="titulo_fondo">
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-lower" >Todo para tu Salud</span>
+      <p class="site-heading-lower" >y Belleza</p>
+      <span class="site-heading-upper  mb-3" >Productos y algo mas...</span>
+      
+      
+    </h1>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">Tienda Naru</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item {% if request.path == '/' %} active {% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Inicio</a>
+          </li>
+          <li class="nav-item {% if request.path == '/bienestar_nutricion' %} active {% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'bienestar_nutricion' %}">Bienestar y Nutricion</a>
+          </li>
+          <li class="nav-item {% if request.path == '/corporal_facial' %} active {% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'corporal_facial' %}">Cuidado Corporal y Facial</a>
+          </li>
+          <li class="nav-item {% if request.path == '/aseo_personal' %} active {% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'aseo_personal' %}">Aseo Personal</a>
+          </li>
+          <li class="nav-item {% if request.path == '/maquillaje_perfumeria' %} active {% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'maquillaje_perfumeria' %}">Maquillaje y Perfumeria</a>
+          </li>
+          <li class="nav-item {% if request.path == '/blog' %} active {% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'blog' %}">Blog</a>
+          </li>
+          <li class="nav-item {% if request.path == '/contacto' %} active {% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'contacto' %}">Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {% block content %}
+
+
+  {% endblock %}
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Copyright 2020; Todos los derechos reservados-Tienda Naru</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'app_tiendanaru/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'app_tiendanaru/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+{% extends "app_tiendanaru/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="pricing py-5">
+  <!-- IMAGENES COLUMNAS -->
+
+  <!-- Page Content -->
+<div class="container">
+
+
+
+
+<div class="row">
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/corporal_facial/arcilla.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="{% url 'contacto' %}"> Mascarilla de Arcilla Blanca  </a>
+        </h4>
+        <p class="card-text">La arcilla es un tratamiento para la piel muy conocido en el mundo de la belleza. 
+
+          Cada color tiene una función y el uso constante trae varios beneficios.
+          
+         Aclarar la piel, desvanecer las manchas y eliminar los radicales libres con la adición de vitamina C, que es antioxidante y garantiza una piel más joven con menos signos, debido a la formación de colágeno.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/corporal_facial/carbon.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="{% url 'contacto' %}"> Mascarilla de Carbon activado vegetal Routine </a>
+        </h4>
+        <p class="card-text"> La Mascarilla Peel-off de Carbón Vegetal es un cosmético para uso esporádico que quita células muertas, clavos y residuos de maquillaje y de contaminación.
+
+          La remoción de estos residuos profundos permite una mayor oxigenación de la piel y una absorción mejor de los activos de los dermocosméticos aplicados a través de los protocolos para cuidados diarios.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/corporal_facial/guante.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="{% url 'contacto' %}">Guante de Silicona </a>
+        </h4>
+        <p class="card-text">Nuestras manos viven expuestas a agresiones externas como: sol, agua, agentes quimicos (detergentes)
+          que causan desgaste en la piel, envejecimiento prematuro, manchas y asperezas. Tus manos se veran saludables
+          y jovenes por mucho mas tiempo.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
+
+<!-- TERMINA COLUMNAS IMAGENES -->
+
+
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$82,000</h6>
+            <hr>
+            
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Plus Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$45,000</h6>
+            <hr>
+      
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Pro Tier -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$24,000</h6>
+            <hr>
+        
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{% static 'app_tiendanaru/img/corporal_facial/jabon.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#"> Jabon Facial Ervadoce</a>
+        </h4>
+        <p class="card-text"> Erva Doce (Hierba Dulce) es una planta poderosa que  tiene beneficios para nuestro cuerpo y nuestra piel.  Formulado con extractos de Erva doce, Algas Marinas y Romero.
+
+          La línea Erva Doce tiene el jabón cremoso facial que auxilia la remoción de las impurezas de la delicada piel del rostro sin agredirla.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{% static 'app_tiendanaru/img/corporal_facial/joli.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">Aceite JOLI</a>
+        </h4>
+        <p class="card-text"> Aceite suave y emoliente, formulado con Vitamina E y Manteca de Cupuaçu, suaviza la piel dejando un toque sedoso y perfumación agradable, haciendo de su baño un momento de placer!</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{% static 'app_tiendanaru/img/corporal_facial/sensa.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#"> Crema Corporal Sensaciones</a>
+        </h4>
+        <p class="card-text">Hidratante Corporal desarrollado especialmente para su ritual de belleza y cuidados, causando Sensaciones que estimulan los sentidos a través de la combinación de notas florales y frutas.
+
+          Deje su piel perfumada e hidratada: Hidratante Hinode Sensaciones con Aceite de Germen de Trigo, su piel hidratada con un toque aterciopelado y suave. Para mujeres bonitas, encantadoras y que les gusta estar perfumadas, cuidando de su piel. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$37,000</h6>
+            <hr>
+            
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Plus Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$27,000</h6>
+            <hr>
+      
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Pro Tier -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$25,000</h6>
+            <hr>
+        
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+ <!-- 3 fila -->     
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{% static 'app_tiendanaru/img/corporal_facial/smell.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#"> Locion Hidratante SMELL DE MARACUYA</a>
+        </h4>
+        <p class="card-text"> a Loción Hidratante Desodorante Corporal Smell Mousse de Maracuyá es el producto perfecto para quien desea una piel suavemente suave e hidratada. Su composición que contiene Extracto de Maracuyá actúa directamente en la profunda nutrición de las células, contribuyendo a una piel mucho más suave e hidratada. Además, gracias a los activos e ingredientes presentes en la maracuyá – también presentes en la loción – la Loción Smell Mousse de Maracuyá de Hinode cuenta con acción calmante y relajante, dando la suavidad necesaria para su piel en su día a día.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{% static 'app_tiendanaru/img/corporal_facial/strax.png' %}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">Locion Hidratante STRAX</a>
+        </h4>
+        <p class="card-text"> Crema que Realza el color de los tatuajes, Protege de las agresiones externas. Estimula la oxigenación y la elasticidad de la piel.Restaura la capa hidrolipidica.Anti-arrugas, y antioxidante. Hidratacion profunda, piel revitalizada y suave.</p>
+      </div>
+    </div>
+  </div>
+      
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$34,000</h6>
+            <hr>
+            
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Plus Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+            <h6 class="card-price text-center">$48,000</h6>
+            <hr>
+      
+            <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+</div>
+      
+</section>
+
+
+{% endblock%}

@@ -1,0 +1,152 @@
+{% extends "app_tiendanaru/base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+
+
+<section>
+
+<!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="{% static 'app_tiendanaru/ContactFrom_v17/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'app_tiendanaru/ContactFrom_v17/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'app_tiendanaru/ContactFrom_v17/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'app_tiendanaru/ContactFrom_v17/fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'app_tiendanaru/ContactFrom_v17/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'app_tiendanaru/ContactFrom_v17/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'app_tiendanaru/ContactFrom_v17/vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'app_tiendanaru/ContactFrom_v17/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'app_tiendanaru/ContactFrom_v17/vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'app_tiendanaru/ContactFrom_v17/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'app_tiendanaru/ContactFrom_v17/css/main.css' %}">
+<!--===============================================================================================-->
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="" method="POST">{% csrf_token %}
+				<span class="contact100-form-title">
+					Porfavor introduce tus datos y te llamaremos inmediatamente!
+				</span>
+
+				<label class="label-input100" for="first-name">Nombre Completo *</label>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+					<input id="first-name" class="input100" type="text" name="first-name" placeholder="Nombre">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+					<input class="input100" type="text" name="last-name" placeholder="Apellido">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="email">Correo electronico *</label>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="phone">Telefono de contacto</label>
+				<div class="wrap-input100">
+					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. 3142346534">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="message">Mensaje *</label>
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<textarea id="message" class="input100" name="message" placeholder="Escribenos"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						Enviar
+					</button>
+				</div>
+			</form>
+
+			<div class="contact100-more flex-col-c-m" style="background-image: url('static/app_tiendanaru/ContactFrom_v17/images/bg-01.jpg');">
+				<div class="flex-w size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-map-marker"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Nuestra Ubicacion
+						</span>
+
+						<span class="txt2">
+							Pasto-Nariño-Colombia
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-phone-handset"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Telefonos de contacto
+						</span>
+
+						<span class="txt3">
+							320 623 0693- 310 826 5721
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-envelope"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Siguenos en nuestras redes sociales
+						</span>
+
+						<span class="txt3">
+                            <p>Facebook : Tienda Virtual Naru</p>
+                            <p>Instagram : @tiendanaru</p>
+                            <p>Correo : tiendanarupas@gmail.com</p>
+						</span>
+					</div>
+				</div>
+			</div>
+        </div>
+<!-- MAPA Y REDES-->
+        <div class="section_redes" id="content">
+            <div style="width: 50%" id="left">
+                <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=pasto%20colombia%20tamasagra+(Tienda%20Naru)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        <!-- REDES SOCIALES -->
+            <div class="social" id="right">
+                <ul>
+                    <p class="titulo_social">Siguenos con un click en tus redes favoritas</p>
+                    <li class="fila"><a href="whatsapp://send?text=Titulo - Enlace" data-action="share/whatsapp/share" ><img src="{% static 'app_tiendanaru/img/home/whatsapp.png' %}" alt="whatsapp"></a>  320 623 0693-310 826 5721</li>
+                    <li class="fila"><a href="https://www.facebook.com/pages/category/Product-Service/Tienda-virtual-NAR%C3%9A-113923803411201/" target="_blank" ><img src="{% static 'app_tiendanaru/img/home/facebook.png' %}" alt="facebook"></a>  Tienda Virtual NARU</li>
+                    <li class="fila"><a href="https://www.instagram.com/tiendanaru/" target="_blank" ><img src="{% static 'app_tiendanaru/img/home/instagram.png' %}" alt="instagram"></a>  @tiendanaru</li>
+                    <li class="fila"><a href="{% url 'contacto' %}"  ><img src="{% static 'app_tiendanaru/img/home/gmail.png' %}" alt="gmail"></a>  tiendanarupas@gmail.com</li>
+                </ul>
+            </div>   
+        </div>        
+
+
+	</div>
+
+
+</section>
+
+
+
+{% endblock%}

@@ -1,0 +1,194 @@
+{% extends "app_tiendanaru/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'app_tiendanaru/img/home/intro.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Proximamente promociones y descuentos</span>
+            <span class="section-heading-lower">Productos 100% de calidad</span>
+          </h2>
+          <p class="mb-3">Haga su pedido hoy y obtenga un código de descuento del 20%  por la compra de 3 productos minimo.
+          </p>
+          <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-xl" href="{% url 'contacto' %}">Contactanos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- PRODUCTOS RECIENTES Free Tier -->
+
+<section class="pricing py-5">
+    <!-- IMAGENES COLUMNAS -->
+
+    <!-- Page Content -->
+<div class="container">
+
+  <!-- Page Heading -->
+  <h1 style="color: cornsilk;">Productos Recientes
+    
+  </h1>
+
+  <div class="row">
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/home/guante.jpg' %}" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="{% url 'contacto' %}">Guante de Silicona</a>
+          </h4>
+          <p class="card-text">Nuestras manos viven expuestas a agresiones externas como: sol, agua, agentes quimicos (detergentes)
+            que causan desgaste en la piel, envejecimiento prematuro, manchas y asperezas. Tus manos se veran saludables
+            y jovenes por mucho mas tiempo.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/home/gel.jpg' %}" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="{% url 'contacto' %}">Gel Reductor-CORPS</a>
+          </h4>
+          <p class="card-text">Ayuda a eliminar la flacidez, quemar grasa localizada, reduce celulitis, mejora la vasodilatacion
+            periferica, activa el drenaje de las toxinas debido a la combinacion de alcanfor y mentol y tiene efecto crioterapia.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app_tiendanaru/img/home/batido.jpg' %}" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="{% url 'contacto' %}">Batido-SHAKE </a>
+          </h4>
+          <p class="card-text">Controla tu peso de forma saludable y agradable, con 3 sabores te puedes alimentar
+            de una forma ligera y con todos los nutrientes que tu cuerpo necesita, sin sentirse pesado despues de las comidas.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
+
+<!-- TERMINA COLUMNAS IMAGENES -->
+
+
+    <div class="container">
+      <div class="row">
+        <!-- Free Tier -->
+        <div class="col-lg-4">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+              <h6 class="card-price text-center">$24,000</h6>
+              <hr>
+              <ul class="fa-ul">
+                <p><strong>Contiene</strong></p>
+                <li><span class="fa-li"><i class="fas fa-check" ></i></span>Silicona</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Aloe vera</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Glicerina</li>
+              
+              </ul>
+              <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <!-- Plus Tier -->
+        <div class="col-lg-4">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+              <h6 class="card-price text-center">$59,000</h6>
+              <hr>
+              <ul class="fa-ul">
+                <p><strong>Contiene</strong></p>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Agua</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Alcohol</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Mentol</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Alcanfor</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Carbomer</li>
+                
+              </ul>
+              <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <!-- Pro Tier -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Precio</h5>
+              <h6 class="card-price text-center">$92,000</h6>
+              <hr>
+              <ul class="fa-ul">
+                <p><strong>Contiene</strong></p>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Cero gluten y cero azucar</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>12 vitaminas y 11 minerales</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Whey protein con fibras saludables</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Colageno hidrolizado</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Granos y semillas de arto valor nutricional</li>
+                
+              </ul>
+              <a href="{% url 'contacto' %}" class="btn btn-block btn-primary text-uppercase">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- TERMINA AQUI LOS PRODUCTOS RECIENTES----- Pro Tier -->
+
+
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Tienda Naru</span>
+              <span class="section-heading-lower">SOBRE NOSOTROS</span>
+            </h2>
+            <p class="mb-0">Somos una Tienda virtual, que nacio como emprendimiento, creado por Madre e Hija para generar bienestar y salud en la poblacion Colombiana con mayor facilidad, y comodidad para nuestros clientes, ademas de genera empleo.
+              Les queremos agradecer por apoyar nuestra iniciativa,  que con el tiempo sera reconocida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
+<!-- MAPA Y REDES-->
+  <div class="section_redes" id="content">
+    <div style="width: 50%" id="left">
+      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=pasto%20colombia%20tamasagra+(Tienda%20Naru)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+ <!-- REDES SOCIALES -->
+    <div class="social" id="right" style="background: rgb(203, 205, 206,0.5);">
+      <ul>
+        <p class="titulo_social">Siguenos en tus redes favoritas</p>
+        <li class="fila"><a href="whatsapp://send?text=Titulo - Enlace" data-action="share/whatsapp/share" ><img src="{% static 'app_tiendanaru/img/home/whatsapp.png' %}" alt="whatsapp"></a>  320 623 0693-310 826 5721</li>
+        <li class="fila"><a href="https://www.facebook.com/pages/category/Product-Service/Tienda-virtual-NAR%C3%9A-113923803411201/" target="_blank" ><img src="{% static 'app_tiendanaru/img/home/facebook.png' %}" alt="facebook"></a>  Tienda Virtual NARU</li>
+        <li class="fila"><a href="https://www.instagram.com/tiendanaru/" target="_blank" ><img src="{% static 'app_tiendanaru/img/home/instagram.png' %}" alt="instagram"></a>  @tiendanaru</li>
+        <li class="fila"><a href="{% url 'contacto' %}"  ><img src="{% static 'app_tiendanaru/img/home/gmail.png' %}" alt="gmail"></a>  tiendanarupas@gmail.com</li>
+      </ul>
+    </div>
+   
+  </div>
+  </section>
+
+ 
+
+  
+
+
+{% endblock %}
