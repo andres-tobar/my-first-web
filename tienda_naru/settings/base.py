@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'tienda_naru.urls'
@@ -105,11 +106,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
-
-STATIC_URL = '/static/'
-
 EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"#especificamos el email backend
 EMAIL_HOST="smtp.gmail.com"#aqui se pone los parametros del correo, para usar el smtp desde el framework debemos desactivar en config del correo el uso de otros programas
 EMAIL_USE_TLS=True #este es el protocolo de seguridad que usan en el correo gmail es tls
@@ -126,5 +122,14 @@ CKEDITOR_CONFIGS = {
     },
 }
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.0/howto/static-files/
+
+STATIC_URL = '/static/'
 # para que me busque los archivos estaticos
-STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,'static'),
+)
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

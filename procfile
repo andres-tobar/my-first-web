@@ -1,1 +1,1 @@
-web: gunicorn tienda_naru.wsgi
+web: gunicorn tienda_naru.wsgi --log-file-
